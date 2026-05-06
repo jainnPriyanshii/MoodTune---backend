@@ -1,0 +1,12 @@
+flask
+flask-cors
+deepface
+tf-keras
+opencv-python-headless
+transformers
+torch
+pillow
+numpy
+requests
+python-dotenv
+supabase
