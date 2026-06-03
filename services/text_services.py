@@ -1,5 +1,5 @@
 from transformers import pipeline
-from label_mapper import NLP_TO_FACE
+from utils.label_mapper import NLP_TO_FACE
 
 classifier = pipeline(
     "text-classification",

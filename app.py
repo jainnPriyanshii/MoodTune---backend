@@ -1,8 +1,8 @@
 from flask import Flask, jsonify, request
-from face_services import analyze_face_emotion
-from text_services import analyze_text_emotion
-from fuse_moods_services import fuse_moods
-from image_decoder import image_decoder
+from services.face_services import analyze_face_emotion
+from services.text_services import analyze_text_emotion
+from services.fuse_moods_services import fuse_moods
+from utils.image_decoder import image_decoder
 
 app = Flask(__name__)
 
