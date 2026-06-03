@@ -7,7 +7,10 @@ def analyze_face_emotion(image):
         enforce_detection=False
     )
 
-    emotions = result[0]["emotion"]
+    emotions = {
+        emotion: float(score)
+        for emotion, score in result[0]["emotion"].items()
+    }
     dominant = result[0]["dominant_emotion"]
 
     return {
